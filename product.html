@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h1>Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="product.html" class="current">Product</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navigation -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> > <span>Products</span>
+    </div>
+
+    <div class="sidebar-box"> 
+        <div class="sidebar"> 
+            <h3>Category</h3> 
+            <ul>
+                <li><a href="#">Gaming Laptops</a></li> 
+                <li><a href="#">Business Laptops</a></li> 
+            </ul>
+            <!-- Product ranking -->
+            <h3>Sort By</h3>
+            <ul>
+                <li><a href="#">Price: Low to High</a></li>
+                <li><a href="#">Price: High to Low</a></li>
+                <li><a href="#">Newest Arrivals</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="product-container">
+            <!-- product1 -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Gaming Laptop A</h2>
+                <p>Introducing the Gaming Laptop A, a premium gaming laptop tailored for demanding gamers seeking unparalleled performance and immersion. It boasts the latest high-performance Intel 13th Gen i7 or higher processor, paired with an NVIDIA RTX series graphics card (RTX 4060 or above), delivering seamless gameplay and stunning visuals on a vibrant 15.6-inch or 17.3-inch screen with resolutions up to 4K and high refresh rates of up to 240Hz...</p>
+                <button onclick="addToCart('product1')">Add to Cart</button>
+            </div>
+            <!-- product2 -->
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Business Laptop B</h2>
+                <p>Introducing the Business Laptop B, a sophisticated and reliable computing solution designed specifically for professionals who prioritize productivity, security, and mobility...</p>
+                <button onclick="addToCart('product2')">Add to Cart</button>
+            </div>
+            <!-- product3 -->
+            <div class="product-item">
+                <img src="product3.jpg" alt="Product 3">
+                <h2>Ultrabook C</h2>
+                <p>Introducing the Ultrabook C, an ultra-slim and ultra-lightweight laptop designed for modern professionals who value performance, mobility, and style...</p>
+                <button onclick="addToCart('product3')">Add to Cart</button>
+            </div>
+            <!-- product4 -->
+            <div class="product-item">
+                <img src="product4.jpg" alt="Product 4">
+                <h2>Gaming Laptop D</h2>
+                <p>Introducing the Gaming Laptop D, a powerhouse designed for gamers who refuse to compromise on performance, immersion, and style...</p>
+                <button onclick="addToCart('product4')">Add to Cart</button>
+            </div>
+            <!-- product5 -->
+            <div class="product-item">
+                <img src="product5.jpg" alt="Product 5">
+                <h2>2-in-1 Laptop E</h2>
+                <p>Introducing the 2-in-1 Laptop E, a versatile and innovative device that seamlessly transitions between a powerful laptop and a flexible tablet...</p>
+                <button onclick="addToCart('product5')">Add to Cart</button>
+            </div>
+            <!-- product6 -->
+            <div class="product-item">
+                <img src="product6.jpg" alt="Product 6">
+                <h2>Chromebook F</h2>
+                <p>Introducing the Chromebook F, a sleek, powerful, and cloud-centric device designed for modern computing...</p>
+                <button onclick="addToCart('product6')">Add to Cart</button>
+            </div>
+            <!-- product7 -->
+            <div class="product-item">
+                <img src="product7.jpg" alt="Product 7">
+                <h2>Gaming Desktop G</h2>
+                <p>Introducing the Gaming Desktop G, a beastly gaming machine engineered for ultimate performance...</p>
+                <button onclick="addToCart('product7')">Add to Cart</button>
+            </div>
+            <!-- product8 -->
+            <div class="product-item">
+                <img src="product8.jpg" alt="Product 8">
+                <h2>Workstation H</h2>
+                <p>Introducing the Workstation H, a cutting-edge professional computing solution tailored for demanding workloads...</p>
+                <button onclick="addToCart('product8')">Add to Cart</button>
+            </div>
+            <!-- product9 -->
+            <div class="product-item">
+                <img src="product9.jpg" alt="Product 9">
+                <h2>All-in-One PC I</h2>
+                <p>Introducing the All-in-One PC I, an elegant and space-saving computing solution designed for both productivity and entertainment...</p>
+                <button onclick="addToCart('product9')">Add to Cart</button>
+            </div>
+            <!-- product10 -->
+            <div class="product-item">
+                <img src="product10.jpg" alt="Product 10">
+                <h2>Mini PC J</h2>
+                <p>Introducing the Mini PC J, a compact yet powerful computing device that brings efficiency, portability, and performance to users who demand the best...</p>
+                <button onclick="addToCart('product10')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sparrow Computers. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productId) {
+            alert('Product ' + productId + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>
